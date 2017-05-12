@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico"/>
+
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,400italic,300italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="bower_components/animate.css/animate.min.css" type="text/css" rel="stylesheet">
+    <link href="bower_components/magnific-popup/dist/magnific-popup.css" type="text/css" rel="stylesheet">
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.scrollfire/jquery.scrollfire.min.js" type="text/javascript"></script>
+    <script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js" type="text/javascript"></script>
+    <script src="bower_components/noty/lib/noty.min.js" type="text/javascript"></script>
+    <script src="bower_components/magnific-popup/dist/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="js/functions.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <title>Отель «Альградо»</title>
+</head>
+<body class="body">
+
+<dl class="main-container">
+    <header id="header" data-slides='["img/header-1.jpg","img/header-2.jpg","img/header-3.jpg"]'>
+        <div class="container-fluid">
+            <div id="fixed-padding" style="display: none;"></div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Меню</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <nav class="collapse navbar-collapse" id="navbar">
+                <div class="logo-small">
+                    <a href="/"><img src="img/logo-blue-horizontal-small.png"></a>
+                </div>
+                <ul>
+                    <li><a href="#apartments" onclick="$('#apartments').show(); $('body').scrollTo($('#apartments'), 500)">Наши номера</a></li>
+                    <li><a href="#service" onclick="$('#service').show(); $('body').scrollTo($('#service'), 500)">Услуги и удобства</a></li>
+                    <li><a href="#conditions" onclick="$('#conditions').show(); $('body').scrollTo($('#conditions'), 500)">Условия проживания</a></li>
+                    <li><a href="#gallery" onclick="$('#gallery').show(); $('body').scrollTo($('#gallery'), 500)">Фотогалерея</a></li>
+                    <li><a href="#map" onclick="$('#map').show(); $('body').scrollTo($('#map'), 500)">Расположение</a></li>
+                    <li><a href="#contacts" onclick="$('#contacts').show(); $('body').scrollTo($('#contacts'), 500)">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <a href="/"><img src="img/logo-white.png" class="img-responsive"></a>
+            </div>
+            <div class="phone-number"><span>+7 988 639-39-03</span></div>
+            <div class="slider-controls"></div>
+        </div>
+    </header>
+
+    <section id="appartments">
+        <div class="container-fluid">
+            <p>&nbsp;</p>
+            <div class="text-xl text-center">Наши номера</div>
+            <p>&nbsp;</p>
+            <div class="row">
+                <div class="col-sm-4 appartment-block">
+                    <div class="appartment-persons">
+                        <img src="img/icon-adult.png">
+                        <img src="img/icon-adult.png">
+                        <img src="img/icon-child-alpha.png">
+                        <img src="img/icon-child-alpha.png">
+                    </div>
+                    <div class="appartment-spec">2 кровати 140 х 200, 24 м<sup>2</sup></div>
+                    <div class="appartment-image"><img src="img/appartment-1.jpg" class="img-responsive"></div>
+                    <div class="appartment-title">Стандарт Твин</div>
+                    <div class="appartment-description">стильные номера с двумя просторными кроватями, площадью 24 м<sup>2</sup></div>
+                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                </div>
+
+                <div class="col-sm-4 appartment-block">
+                    <div class="appartment-persons">
+                        <img src="img/icon-adult.png">
+                        <img src="img/icon-adult.png">
+                    </div>
+                    <div class="appartment-spec">1 кровать 160 х 200, 24 м<sup>2</sup></div>
+                    <div class="appartment-image"><img src="img/appartment-2.jpg" class="img-responsive"></div>
+                    <div class="appartment-title">Стандарт Дабл Твин</div>
+                    <div class="appartment-description">стильные номера с двуспальной кроватью, площадью 24 м<sup>2</sup></div>
+                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                </div>
+
+                <div class="col-sm-4 appartment-block">
+                    <div class="appartment-persons">
+                        <img src="img/icon-adult.png">
+                        <img src="img/icon-adult.png">
+                        <img src="img/icon-child-alpha.png">
+                    </div>
+                    <div class="appartment-spec">кровать 160 х 200, диван, 32 м<sup>2</sup></div>
+                    <div class="appartment-image"><img src="img/appartment-3.jpg" class="img-responsive"></div>
+                    <div class="appartment-title">Стандарт Плюс</div>
+                    <div class="appartment-description">Просторные номера, 32 м<sup>2</sup>. Пространство номера разделено на спальную и гостиную зону с мягкой мебелью</div>
+                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                </div>
+
+                <div class="col-sm-4 appartment-block">
+                    <div class="appartment-persons">
+                        <img src="img/icon-adult.png">
+                        <img src="img/icon-adult.png">
+                        <img src="img/icon-child-alpha.png">
+                    </div>
+                    <div class="appartment-spec">кровать 160 х 200, 24 м<sup>2</sup></div>
+                    <div class="appartment-image"><img src="img/appartment-4.jpg" class="img-responsive"></div>
+                    <div class="appartment-title">Стандарт Плюс с видом на море</div>
+                    <div class="appartment-description">Просторные номера 32 м<sup>2</sup> c видом на море. Пространство номера разделено на спальную и гостиную зону с мягкой мебелью</div>
+                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                </div>
+
+                <div class="col-sm-4 appartment-block">
+                    <div class="appartment-persons">
+                        <img src="img/icon-adult.png">
+                        <img src="img/icon-adult.png">
+                        <img src="img/icon-adult-alpha.png">
+                        <img src="img/icon-adult-alpha.png">
+                    </div>
+                    <div class="appartment-spec">кровать, диван, 46 м<sup>2</sup></div>
+                    <div class="appartment-image"><img src="img/appartment-5.jpg" class="img-responsive"></div>
+                    <div class="appartment-title">Студия с видом на море</div>
+                    <div class="appartment-description">Просторные номера 46 м<sup>2</sup> c видом на море. Пространство номера разделено на спальную и гостиную зону с мягкой мебелью</div>
+                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                </div>
+
+                <div class="col-sm-4 appartment-block">
+                    <div class="appartment-persons">
+                        <img src="img/icon-adult.png">
+                        <img src="img/icon-adult.png">
+                        <img src="img/icon-child-alpha.png">
+                        <img src="img/icon-child-alpha.png">
+                    </div>
+                    <div class="appartment-spec">150 м<sup>2</sup>, кровать, два дивана, 2 односпальные кровати</div>
+                    <div class="appartment-image"><img src="img/appartment-6.jpg" class="img-responsive"></div>
+                    <div class="appartment-title">Коттедж семейный</div>
+                    <div class="appartment-description">Уютные трехэтажные коттеджи  общей площадью 150 м<sup>2</sup> с гостиной, двумя санузлами, оборудованной кухней и детским мансардным этажом</div>
+                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service">
+        <div class="container-fluid">
+            <p>&nbsp;</p>
+            <div class="text-xl text-center">Услуги и удобства</div>
+            <p>&nbsp;</p>
+            <div class="row">
+                <div class="col-lg-3 col-sm-4 service-block">
+                    <div class="service-title">Питание</div>
+                    <div class="service-image"><img src="img/service-food.jpg" class="img-thumbnail img-circle"></div>
+                    <div class="service-description">Отель Альградо рад предложить своим гостям богатый выбор блюд колоритной национальной и европейской кухни в нашем ресторане. Ресторан работает по системе "шведского стола"  на завтраки , обеды и ужины, которые включены в стоимость проживания.</div>
+                    <div class="service-button"><button class="btn btn-default">Подробнее</button></div>
+                </div>
+
+                <div class="col-lg-3 col-sm-4 service-block">
+                    <div class="service-title">Пляжный отдых</div>
+                    <div class="service-image"><img src="img/service-beach.jpg" class="img-thumbnail img-circle"></div>
+                    <div class="service-description">В отеле Альградо Вас ждет незабываемый пляжный отдых на оборудованном пляже, который находится в шаговой близости.</div>
+                    <div class="service-button"><button class="btn btn-default">Подробнее</button></div>
+                </div>
+
+                <div class="col-lg-3 col-sm-4 service-block">
+                    <div class="service-title">Бассейн</div>
+                    <div class="service-image"><img src="img/service-pool.jpg" class="img-thumbnail img-circle"></div>
+                    <div class="service-description">На территории гостиницы имеются два открытых подогреваемых плавательных бассейна  для взрослых и детей.</div>
+                    <div class="service-button"><button class="btn btn-default">Подробнее</button></div>
+                </div>
+
+                <div class="col-lg-3 col-sm-4 service-block">
+                    <div class="service-title">Детский клуб / анимация</div>
+                    <div class="service-image"><img src="img/service-kids.jpg" class="img-thumbnail img-circle"></div>
+                    <div class="service-description">У детей в отеле Альградо есть множество чудесных возможностей. Альградо - это мир в котором дети со своими сверстниками проводят вместе время, участвуют в различных мероприятиях и развлекаются вместе с нашей командой аниматоров.</div>
+                    <div class="service-button"><button class="btn btn-default">Подробнее</button></div>
+                </div>
+
+                <div class="col-lg-3 col-sm-4 service-block">
+                    <div class="service-title">Торжества / мероприятия</div>
+                    <div class="service-image"><img src="img/service-event.jpg" class="img-thumbnail img-circle"></div>
+                    <div class="service-description">Это может быть пышное торжество, а может быть скромная церемония только для членов семьи, а затем ужин для близких родственников. У нас имеются варианты на любой вкус.</div>
+                    <div class="service-button"><button class="btn btn-default">Подробнее</button></div>
+                </div>
+
+                <div class="col-lg-3 col-sm-4 service-block">
+                    <div class="service-title">Свадебное предложение</div>
+                    <div class="service-image"><img src="img/service-wedding.jpg" class="img-thumbnail img-circle"></div>
+                    <div class="service-description">Альградо открывает свои двери навстречу свадьбе Bашей мечты. Команда специалистов своего дела превращает Bашу мечту о свадьбе в реальность.</div>
+                    <div class="service-button"><button class="btn btn-default">Подробнее</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conditions">
+        <div class="container">
+            <p>&nbsp;</p>
+            <div class="text-xl text-center">Условия проживания</div>
+            <p>&nbsp;</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="condition"><img src="img/li.png"> Время заезда в - 13.00  . Время выезда –  11.00</div>
+                    <div class="condition"><img src="img/li.png"> Отмена бронирования . В случае отмены, изменения бронирования или незаезда, взимается штраф в размере 100% стоимости первых суток проживания.</div>
+                    <div class="condition"><img src="img/li.png"> Ранний заезд - пожалуйста свяжитесь с отелем.</div>
+                    <div class="condition"><img src="img/li.png"> Поздний выезд возможен только при наличии свободных номеров.</div>
+                    <div class="condition">
+                        <img src="img/li.png"> За поздний выезд взимается дополнительная плата в следующем  размере:<br>
+                        до 15:00 часов – взимается плата  в размере 50% от стоимости номера,<br>
+                        после  15:00 часов взимается плата в размере 100% от стоимости номера.
+                    </div>
+                    <div class="condition"><img src="img/li.png"> Размещение с домашними животными не предусмотрено.</div>
+                    <div class="condition"><img src="img/li.png"> Завтрак, обед и ужин включен в стоимость проживания только при предъявлении официанту карты гостя.</div>
+
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="condition"><img src="img/li.png"> Согласно положению законодательства о запрете курения с 1 июня 2014 года курение на всей территории отеля запрещено. В случае курения в номере стоимость генеральной уборки составит 10000 рублей. Данная сумма будет добавлена отдельной строкой к Вашему счету за проживание.</div>
+                    <div class="condition"><img src="img/li.png"> Употребление алкогольных напитков в номерах и общественных зонах гостиничного комплекса категорически запрещено. Нарушение данного правила влечет за собой выселение из гостиницы без компенсации стоимости проживания.</div>
+                    <div class="condition"><img src="img/li.png"> Запрещается выносить из номеров гостиничного комплекса полотенца, простыни и прочие постельные принадлежности за пределы номера. Услуги прачечной в размере 5000 рублей будут добавлены отдельной строкой к Вашему счету за проживание.</div>
+                    <div class="condition"><img src="img/li.png"> Купание в бассейне в одежде не допускается. Пользование бассейном разрешено только в купальных костюмах.</div>
+                    <div class="condition"><img src="img/li.png"> Купание в бассейне в ночное время запрещено.</div>
+                    <div class="condition"><img src="img/li.png"> Дети дошкольного и младшего школьного возраста должны находиться у бассейна и на территории гостиничного комплекса в сопровождении взрослых.</div>
+                </div>
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container-fluid">
+            <p>&nbsp;</p>
+            <div class="text-xl text-center">Фотогалерея</div>
+            <p>&nbsp;</p>
+            <div class="gallery-photos">
+                <img src="img/photo_01.jpg">
+                <img src="img/photo_02.jpg">
+                <img src="img/photo_03.jpg">
+                <img src="img/photo_04.jpg">
+                <img src="img/photo_05.jpg">
+                <img src="img/photo_06.jpg">
+                <img src="img/photo_07.jpg">
+                <img src="img/photo_08.jpg">
+                <img src="img/photo_09.jpg">
+                <img src="img/photo_10.jpg">
+                <img src="img/photo_11.jpg">
+                <img src="img/photo_12.jpg">
+                <img src="img/photo_13.jpg">
+                <img src="img/photo_14.jpg">
+                <img src="img/photo_15.jpg">
+                <img src="img/photo_16.jpg">
+                <img src="img/photo_01.jpg">
+                <img src="img/photo_02.jpg">
+                <img src="img/photo_03.jpg">
+                <img src="img/photo_04.jpg">
+                <img src="img/photo_05.jpg">
+                <img src="img/photo_06.jpg">
+                <img src="img/photo_07.jpg">
+                <img src="img/photo_08.jpg">
+                <img src="img/photo_09.jpg">
+                <img src="img/photo_10.jpg">
+                <img src="img/photo_11.jpg">
+                <img src="img/photo_12.jpg">
+                <img src="img/photo_13.jpg">
+                <img src="img/photo_14.jpg">
+                <img src="img/photo_15.jpg">
+                <img src="img/photo_16.jpg">
+                <img src="img/photo_01.jpg">
+                <img src="img/photo_02.jpg">
+                <img src="img/photo_03.jpg">
+                <img src="img/photo_04.jpg">
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+    </section>
+
+    <section id="map">
+        <p>&nbsp;</p>
+        <div class="text-xl text-center">Мы на карте</div>
+        <p>&nbsp;</p>
+        <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?center=42.983630,47.467328&zoom=13&key=AIzaSyCPBn6JkCKWiBm9AJoLfYD0yhl8tE_-jNE" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        <dl class="container">
+            <p>&nbsp;</p>
+            <div class="text-xl text-center">Наши контакты</div>
+            <p>&nbsp;</p>
+            <dl class="row">
+                <div class="col-sm-7 contacts-info">
+                    <dl class="dl-horizontal">
+                        <dt>Телефон:</dt>
+                        <dd>+7 988 639-39-03</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Телефон:</dt>
+                        <dd>+7 929 881-93-07</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Факс:</dt>
+                        <dd>+7 929 881-93-07</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Email:</dt>
+                        <dd>algradohotel@mail.ru</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Адрес:</dt>
+                        <dd>Россия, республика Дагестан, Махачкала</dd>
+                    </dl>
+                </div>
+                <div class="col-sm-5">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control input-lg" placeholder="Представьтесь">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="contact" id="contact" class="form-control input-lg" placeholder="Ваш email или телефон">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control input-lg" placeholder="Ваше сообщение" style="height: 250px;"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-lg btn-block btn-info">Отправить сообщение</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    разработано jambik@gmail.com
+                </div>
+                <div class="col-sm-5">
+                    <img src="http://restoran-glush/img/icon-metrika.png">
+                    Copyright © 2017 Hotel Algrado
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="callbackLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="http://restoran-glush/callback" method="POST" name="form_callback" id="form_callback">
+                <input type="hidden" name="_token" value="ESvo5Jx65JC6uPg3tVCVdJW5zxi6yQU4KfjuPq62">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="callbackLabel">Заказать обратный звонок</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-status"></div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="phone" placeholder="Телефон">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-primary form-button">Заказать обратный звонок</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
