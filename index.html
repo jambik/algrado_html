@@ -45,15 +45,15 @@
             </div>
             <nav class="collapse navbar-collapse" id="navbar">
                 <div class="logo-small">
-                    <a href="/"><img src="img/logo-blue-horizontal-small.png"></a>
+                    <a href="#header" onclick="$('body').scrollTo($('#header'), 500)"><img src="img/logo-blue-horizontal-small.png"></a>
                 </div>
                 <ul>
-                    <li><a href="#apartments" onclick="$('#apartments').show(); $('body').scrollTo($('#apartments'), 500)">Наши номера</a></li>
-                    <li><a href="#service" onclick="$('#service').show(); $('body').scrollTo($('#service'), 500)">Услуги и удобства</a></li>
-                    <li><a href="#conditions" onclick="$('#conditions').show(); $('body').scrollTo($('#conditions'), 500)">Условия проживания</a></li>
-                    <li><a href="#gallery" onclick="$('#gallery').show(); $('body').scrollTo($('#gallery'), 500)">Фотогалерея</a></li>
-                    <li><a href="#map" onclick="$('#map').show(); $('body').scrollTo($('#map'), 500)">Расположение</a></li>
-                    <li><a href="#contacts" onclick="$('#contacts').show(); $('body').scrollTo($('#contacts'), 500)">Контакты</a></li>
+                    <li><a href="#apartments" onclick="$('body').scrollTo($('#appartments_top'), 500)">Наши номера</a></li>
+                    <li><a href="#service" onclick="$('body').scrollTo($('#service_top'), 500)">Услуги и удобства</a></li>
+                    <li><a href="#conditions" onclick="$('body').scrollTo($('#conditions_top'), 500)">Условия проживания</a></li>
+                    <li><a href="#gallery" onclick="$('body').scrollTo($('#gallery_top'), 500)">Фотогалерея</a></li>
+                    <li><a href="#map" onclick="$('body').scrollTo($('#map_top'), 500)">Расположение</a></li>
+                    <li><a href="#contacts" onclick="$('body').scrollTo($('#contacts_top'), 500)">Контакты</a></li>
                 </ul>
             </nav>
             <div class="logo">
@@ -62,6 +62,8 @@
             <div class="phone-number"><span>+7 988 639-39-03</span></div>
             <div class="slider-controls"></div>
         </div>
+        <div id="appartments_top"></div>
+        <p>&nbsp;</p>
     </header>
 
     <section id="appartments">
@@ -151,6 +153,8 @@
                 </div>
             </div>
         </div>
+        <div id="service_top"></div>
+        <p>&nbsp;</p>
     </section>
 
     <section id="service">
@@ -202,6 +206,8 @@
                 </div>
             </div>
         </div>
+        <div id="conditions_top"></div>
+        <p>&nbsp;</p>
     </section>
 
     <section id="conditions">
@@ -235,6 +241,7 @@
                 </div>
             </div>
             <p>&nbsp;</p>
+            <div id="gallery_top"></div>
             <p>&nbsp;</p>
         </div>
     </section>
@@ -283,6 +290,7 @@
                 <img src="img/photo_04.jpg">
             </div>
             <p>&nbsp;</p>
+            <div id="map_top"></div>
             <p>&nbsp;</p>
         </div>
     </section>
@@ -292,9 +300,10 @@
         <div class="text-xl text-center">Мы на карте</div>
         <p>&nbsp;</p>
         <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?center=42.983630,47.467328&zoom=13&key=AIzaSyCPBn6JkCKWiBm9AJoLfYD0yhl8tE_-jNE" allowfullscreen></iframe>
+        <div id="contacts_top"></div>
     </section>
 
-    <footer>
+    <footer id="contacts">
         <dl class="container">
             <p>&nbsp;</p>
             <div class="text-xl text-center">Наши контакты</div>

@@ -72,8 +72,8 @@ header .phone-number { text-align: center; color: #fff; margin: 30px 30% 0 30%; 
 .appartment-spec { display: inline-block; font-weight: 700; font-size: 11pt; color: #5b9ade; }
 .appartment-image { margin: 10px 0 0 0; }
 .appartment-image img { margin: 0 auto; }
-.appartment-title { font-size: 20pt; margin: 10px 12% 0 12%; padding-bottom: 10px; border-bottom: 1px solid #ddd; }
-.appartment-description { margin: 10px 12% 0 12%; }
+.appartment-title { font-size: 20pt; margin: 10px 9% 0 9%; padding-bottom: 10px; border-bottom: 1px solid #ddd; }
+.appartment-description { margin: 10px 9% 0 9%; }
 .appartment-button { margin: 20px 0 0 0; }
 
 #service { background: #eee; }
