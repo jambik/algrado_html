@@ -88,7 +88,7 @@ header .phone-number { text-align: center; color: #fff; margin: 30px 30% 0 30%; 
 .condition { margin: 20px 5% 0 0; }
 
 #gallery { background: #eee; }
-.gallery-photos img { margin: 0 0 5px 0; }
+.gallery-photos img { margin: 0 0 30px 0; }
 
 .contacts-info { font-size: 16pt; }
 
@@ -161,7 +161,8 @@ nav.fixed { z-index: 999; }
 
     header { min-height: auto; }
     header nav { margin-top: 10px; margin-bottom: 20px; }
-    header .phone-number { font-size: 16pt; }
+    header .logo { margin-right: 10%; margin-left: 10%; }
+    header .phone-number { font-size: 16pt; margin-right: 10%; margin-left: 10%; }
 
     #about-us { padding: 50px 0; }
 
