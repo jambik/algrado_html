@@ -86,8 +86,8 @@ $(document).ready(function() {
         return false;
     });
 
-    if ($('.popup-gallery').length) {
-        $('.popup-gallery').magnificPopup({
+    if ($('.gallery').length) {
+        $('.gallery').magnificPopup({
             type: 'image',
             zoom: {
                 enabled: true

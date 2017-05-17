@@ -149,6 +149,8 @@ footer .img-gallery { width: 70px; height: 70px; margin: 0 10px 10px 0; border: 
     transform: scaleY(1);
 }
 
+nav.fixed { z-index: 999; }
+
 /* -------------------- Responsive classes ------------------- */
 
 /* Extra small devices - less than 768 */
@@ -177,7 +179,6 @@ footer .img-gallery { width: 70px; height: 70px; margin: 0 10px 10px 0; border: 
     .text-xxl { font-size: 50pt; }
     .text-xl { font-size: 30pt; }
     .text-l { font-size: 20pt; }
-
     footer { font-size: 10pt; }
     footer .title { font-size: 12pt; }
 }
