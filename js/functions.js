@@ -24,6 +24,13 @@ $(document).ready(function() {
         });
     }
 
+    if ($('#roomIcons').length) {
+        $('#roomIcons a').on('click', function(e){
+            e.preventDefault();
+            $('#roomImage').attr('src', $(this).data('image'));
+        });
+    }
+
     $("#form_recall").submit(function() {
 
         // Место для отображения ошибок в форме

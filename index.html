@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="favicon.ico"/>
 
     <!-- Styles -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,400italic,300italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="bower_components/animate.css/animate.min.css" type="text/css" rel="stylesheet">
     <link href="bower_components/magnific-popup/dist/magnific-popup.css" type="text/css" rel="stylesheet">
@@ -83,7 +83,7 @@
                     <div class="appartment-image"><img src="img/appartment-1.jpg" class="img-responsive"></div>
                     <div class="appartment-title">Стандарт Твин</div>
                     <div class="appartment-description">стильные номера с двумя просторными кроватями, площадью 24 м<sup>2</sup></div>
-                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                    <div class="appartment-button"><button data-toggle="modal" data-target="#roomStandartTwin" class="btn btn-info">Подробнее</button></div>
                 </div>
 
                 <div class="col-sm-4 appartment-block">
@@ -352,6 +352,71 @@
             </div>
         </div>
     </section>
+</div>
+
+<div class="modal fade" id="roomStandartTwin" tabindex="-1" role="dialog" aria-labelledby="roomStandartTwinLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="roomStandartTwinLabel">Стандарт Твин</h4>
+            </div>
+            <div class="modal-body">
+                <div class="room-images">
+                    <div class="room-icons scroll1">
+                        <div style="height: 300px;" id="roomIcons">
+                            <a href="#" class="active" data-image="img/appartment-1.jpg"><img src="img/appartment-1_01.jpg"></a>
+                            <a href="#" data-image="img/appartment-2.jpg"><img src="img/appartment-1_02.jpg"></a>
+                            <a href="#" data-image="img/appartment-3.jpg"><img src="img/appartment-1_03.jpg"></a>
+                            <a href="#" data-image="img/appartment-4.jpg"><img src="img/appartment-1_04.jpg"></a>
+                            <a href="#" data-image="img/appartment-5.jpg"><img src="img/appartment-1_05.jpg"></a>
+                            <a href="#" data-image="img/appartment-6.jpg"><img src="img/appartment-1_06.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="room-image">
+                        <img src="img/appartment-1.jpg" class="img-responsive" id="roomImage">
+                    </div>
+                    <div class="room-spec">
+                        <div class="room-persons">
+                            <img src="img/icon-adult.png">
+                            <img src="img/icon-adult.png">
+                            <img src="img/icon-child-alpha.png">
+                            <img src="img/icon-child-alpha.png">
+                        </div>
+                        <div>2 кровати 140 х 200, 24 м<sup>2</sup></div>
+                        <div class="room-price">2 720 РУБ./НОЧЬ</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="room-text">
+                    <div class="room-description">стильные номера с двумя просторными кроватями, площадью 24 м<sup>2</sup></div>
+                    <div class="room-comfort">
+                        <ul>
+                            <li>2 отдельные просторные кровати 140*200 см</li>
+                            <li>возможность дополнительного размещения двух детей  0-2 лет бесплатно , 2-12 лет (1700руб)</li>
+                            <li>Бесплатный Wi-Fi</li>
+                            <li>Телевизор</li>
+                            <li>Кондиционер</li>
+                            <li>Сейф</li>
+                            <li>холодильник</li>
+                            <li>балкон</li>
+                            <li>Санузел с душевой</li>
+                            <li>Фен</li>
+                            <li>набор банных полотенец</li>
+                            <li>пляжное полотенце</li>
+                            <li>Тапочки</li>
+                            <li>Бесплатная бутылка минеральной воды</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary form-button">Забронировать номер</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="callbackLabel">
