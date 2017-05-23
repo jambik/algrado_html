@@ -9,6 +9,7 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="bower_components/datetimepicker/build/jquery.datetimepicker.min.css" type="text/css" rel="stylesheet">
     <link href="bower_components/animate.css/animate.min.css" type="text/css" rel="stylesheet">
     <link href="bower_components/magnific-popup/dist/magnific-popup.css" type="text/css" rel="stylesheet">
     <link href="css/global.css" type="text/css" rel="stylesheet">
@@ -16,6 +17,7 @@
     <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bower_components/datetimepicker/build/jquery.datetimepicker.full.min.js" type="text/javascript"></script>
     <script src="bower_components/jquery.scrollfire/jquery.scrollfire.min.js" type="text/javascript"></script>
     <script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js" type="text/javascript"></script>
     <script src="bower_components/noty/lib/noty.min.js" type="text/javascript"></script>
@@ -95,7 +97,7 @@
                     <div class="appartment-image"><img src="img/appartment-2.jpg" class="img-responsive"></div>
                     <div class="appartment-title">Стандарт Дабл Твин</div>
                     <div class="appartment-description">стильные номера с двуспальной кроватью, площадью 24 м<sup>2</sup></div>
-                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                    <div class="appartment-button"><button data-toggle="modal" data-target="#roomStandartTwin" class="btn btn-info">Подробнее</button></div>
                 </div>
 
                 <div class="col-sm-4 appartment-block">
@@ -108,7 +110,7 @@
                     <div class="appartment-image"><img src="img/appartment-3.jpg" class="img-responsive"></div>
                     <div class="appartment-title">Стандарт Плюс</div>
                     <div class="appartment-description">Просторные номера, 32 м<sup>2</sup>. Пространство номера разделено на спальную и гостиную зону с мягкой мебелью</div>
-                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                    <div class="appartment-button"><button data-toggle="modal" data-target="#roomStandartTwin" class="btn btn-info">Подробнее</button></div>
                 </div>
 
                 <div class="col-sm-4 appartment-block">
@@ -121,7 +123,7 @@
                     <div class="appartment-image"><img src="img/appartment-4.jpg" class="img-responsive"></div>
                     <div class="appartment-title">Стандарт Плюс с видом на море</div>
                     <div class="appartment-description">Просторные номера 32 м<sup>2</sup> c видом на море. Пространство номера разделено на спальную и гостиную зону с мягкой мебелью</div>
-                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                    <div class="appartment-button"><button data-toggle="modal" data-target="#roomStandartTwin" class="btn btn-info">Подробнее</button></div>
                 </div>
 
                 <div class="col-sm-4 appartment-block">
@@ -135,7 +137,7 @@
                     <div class="appartment-image"><img src="img/appartment-5.jpg" class="img-responsive"></div>
                     <div class="appartment-title">Студия с видом на море</div>
                     <div class="appartment-description">Просторные номера 46 м<sup>2</sup> c видом на море. Пространство номера разделено на спальную и гостиную зону с мягкой мебелью</div>
-                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                    <div class="appartment-button"><button data-toggle="modal" data-target="#roomStandartTwin" class="btn btn-info">Подробнее</button></div>
                 </div>
 
                 <div class="col-sm-4 appartment-block">
@@ -149,7 +151,7 @@
                     <div class="appartment-image"><img src="img/appartment-6.jpg" class="img-responsive"></div>
                     <div class="appartment-title">Коттедж семейный</div>
                     <div class="appartment-description">Уютные трехэтажные коттеджи  общей площадью 150 м<sup>2</sup> с гостиной, двумя санузлами, оборудованной кухней и детским мансардным этажом</div>
-                    <div class="appartment-button"><button class="btn btn-info">Подробнее</button></div>
+                    <div class="appartment-button"><button data-toggle="modal" data-target="#roomStandartTwin" class="btn btn-info">Подробнее</button></div>
                 </div>
             </div>
         </div>
@@ -412,9 +414,104 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-primary form-button">Забронировать номер</button>
+                <button type="submit" class="btn btn-primary form-button" data-toggle="modal" data-target="#reservationForm">Забронировать номер</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="reservationForm" tabindex="-1" role="dialog" aria-labelledby="reservationFormLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="#" method="POST" name="form_callback" id="form_reservation" class="form-horizontal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="reservationFormLabel">Бронирование номера: <span id="roomName">Стандарт Твин</span></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-status"></div>
+                    <p class="text-center">ПЕРСОНАЛЬНЫЕ ДАННЫЕ</p>
+                    <div class="form-group">
+                        <label for="r_name" class="col-sm-5 control-label">Представьтесь *</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="r_name" placeholder="Фамилия Имя Отчество">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="r_city" class="col-sm-5 control-label">Город *</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="r_city" placeholder="Город">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="r_phone" class="col-sm-5 control-label">Контактный телефон *</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="r_phone" placeholder="Контактный телефон">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="r_email" class="col-sm-5 control-label">Электронная почта</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="r_email" placeholder="Ваш email, если есть">
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+                    <p class="text-center">ДАННЫЕ ДЛЯ БРОНИРОВАНИЯ</p>
+                    <div class="form-group">
+                        <label for="r_days" class="col-sm-5 control-label">Количество дней *</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="r_days" value="1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="r_date" class="col-sm-5 control-label">Дата заезда *</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control input-date" id="r_date" placeholder="дд-мм-гггг">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="r_adults" class="col-sm-5 control-label">Количество взрослых *</label>
+                        <div class="col-sm-6">
+                            <select id="r_adults" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="r_kids" class="col-sm-5 control-label">Количество детей</label>
+                        <div class="col-sm-6">
+                            <select id="r_kids" class="form-control">
+                                <option value="">Без детей</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="r_name" class="col-sm-5 control-label">Дополнительная информация</label>
+                        <div class="col-sm-6">
+                            <textarea name="r_info" class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-primary form-button">Забронировать</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

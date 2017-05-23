@@ -31,6 +31,17 @@ $(document).ready(function() {
         });
     }
 
+    if ($('.input-date').length) {
+
+        $.datetimepicker.setLocale('ru');
+        $('.input-date').datetimepicker({
+            format: 'd-m-Y',
+            timepicker: false,
+            dayOfWeekStart: 1
+        });
+
+    }
+
     $("#form_recall").submit(function() {
 
         // Место для отображения ошибок в форме
