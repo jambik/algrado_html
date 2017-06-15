@@ -24,12 +24,12 @@ $(document).ready(function() {
         });
     }
 
-    if ($('#roomIcons').length) {
+    /*if ($('#roomIcons').length) {
         $('#roomIcons a').on('click', function(e){
             e.preventDefault();
             $('#roomImage').attr('src', $(this).data('image'));
         });
-    }
+    }*/
 
     if ($('.input-date').length) {
 
